@@ -6,11 +6,12 @@ authors = ["Gordon Watts <gwatts@uw.edu>"]
 license = "Apache License 2.0"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8,<3.9"
 ServiceX_DID = {path = "I:/gwatts/Code/irishep/ServiceX_DID", develop = true}
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.3"
+func-adl-servicex = "^1.0.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
