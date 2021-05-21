@@ -16,6 +16,9 @@ pika==1.1.0; python_version >= "3.8" and python_version < "4.0" \
 requests==2.25.1; python_version >= "3.8" and python_full_version < "3.0.0" and python_version < "4.0" or python_version >= "3.8" and python_version < "4.0" and python_full_version >= "3.5.0" \
     --hash=sha256:c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e \
     --hash=sha256:27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804
+servicex-did-finder-lib==1.0.0b4; python_version >= "3.8" and python_version < "4.0" \
+    --hash=sha256:125d14ce00d029987d6ba4fb66acce931912c02acf6a88cf7404e3e35581f34e \
+    --hash=sha256:6d35fc42083682bbced540d3d0bfc1502672aae869d916e8dfbbf3286d2573eb
 urllib3==1.26.4; python_version >= "3.8" and python_full_version < "3.0.0" and python_version < "4.0" or python_full_version >= "3.5.0" and python_version < "4" and python_version >= "3.8" \
     --hash=sha256:2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df \
     --hash=sha256:e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937

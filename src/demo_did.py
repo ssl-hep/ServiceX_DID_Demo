@@ -1,5 +1,5 @@
 from typing import Any, AsyncGenerator, Dict
-from servicex_did import start_did_finder
+from servicex_did_finder_lib import start_did_finder
 import logging
 
 async def find_files(did_name: str) -> AsyncGenerator[Dict[str, Any], None]:

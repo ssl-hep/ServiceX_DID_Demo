@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "ServiceX_DID_demo"
+name = "ServiceX_DID_Finder_demo"
 version = "0.1.0"
-description = "Demo/Tempalte package for a ServiceX DID Finder"
+description = "Demo/Template package for a ServiceX DID Finder"
 authors = ["Gordon Watts <gwatts@uw.edu>"]
 license = "Apache License 2.0"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.9"
-ServiceX_DID = {path = "C:/Users/gordo/Documents/Code/IRIS-HEP/ServiceX_DID", develop = true}
+servicex-did-finder-lib = "^1.0.0-beta.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.3"
