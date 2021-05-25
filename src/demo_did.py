@@ -32,6 +32,4 @@ def run_demo():
         log.info('Done running demo DID finder')
 
 if __name__ == "__main__":
-    import sys
-    print (sys.argv)
     run_demo()
