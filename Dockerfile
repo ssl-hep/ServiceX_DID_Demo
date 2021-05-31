@@ -11,3 +11,5 @@ RUN python -m pip list > /python_installed_packages.txt
 
 # build timestamp
 RUN echo "Timestamp:" `date --utc` | tee /image-build-info.txt
+
+ENTRYPOINT [ "python3", "/home/did/use_demo.py" ]
