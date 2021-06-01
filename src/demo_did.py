@@ -2,7 +2,9 @@ from typing import Any, AsyncGenerator, Dict
 from servicex_did_finder_lib import start_did_finder
 import logging
 
-async def find_files(did_name: str) -> AsyncGenerator[Dict[str, Any], None]:
+__log = logging.getLogger(__name__)
+
+async def find_files(did_name: str, info: Dict[str, Any]) -> AsyncGenerator[Dict[str, Any], None]:
     '''For each incoming did name, generate a list of files that ServiceX can process
 
     Args:
@@ -11,10 +13,12 @@ async def find_files(did_name: str) -> AsyncGenerator[Dict[str, Any], None]:
     Returns:
         AsyncGenerator[Dict[str, any], None]: yield each file
     '''
+    __log.info('Looking up dataset {did_name}',
+                      extra={'requestId': info['request-id']})
+
     if did_name != 'dataset1':
         raise Exception(f'Dataset "{did_name}" is not known!')
 
-    # TODO: convert http to root from cern open data for testing
     yield {
         'file_path': "http://opendata.cern.ch/record/3827/files/mc_167740.WenuWithB.root",  # Path accessible via transformers (root, http)
         'adler32': 0,  # No clue
