@@ -9,6 +9,8 @@ async def find_files(did_name: str, info: Dict[str, Any]) -> AsyncGenerator[Dict
 
     Args:
         did_name (str): Dataset name
+        info (Dict[str, Any]): Property bag containing `request-id`, etc. for the parent
+                               request.
 
     Returns:
         AsyncGenerator[Dict[str, any], None]: yield each file

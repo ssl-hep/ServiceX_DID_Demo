@@ -1,4 +1,5 @@
 # servicex_did_demo
+
  Demo the ServiceX DID Library
 
 ## Usage
@@ -22,3 +23,5 @@ To see how this is created see the following files in this repository:
 * `src/demo.did.py` - Contains the code that returns a single file if the proper dataset name is queried.
 * `Dockerfile` - Builds the container that can run in the ServiceX environment.
 * `requirements.txt` - Contains all the packages required to run the did finder.
+
+This repository is a template repository - which makes it very    easy to start as a template.
