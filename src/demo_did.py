@@ -15,7 +15,7 @@ async def find_files(did_name: str, info: Dict[str, Any]) -> AsyncGenerator[Dict
     Returns:
         AsyncGenerator[Dict[str, any], None]: yield each file
     '''
-    __log.info('Looking up dataset {did_name}',
+    __log.info(f'Looking up dataset {did_name}',
                       extra={'requestId': info['request-id']})
 
     if did_name != 'dataset1':
